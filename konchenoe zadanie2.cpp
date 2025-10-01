@@ -9,8 +9,8 @@ int main() {
     //формула хорд:
     //x=(a*f_b-b*f_a)/(f_b-f_a)
     do{
-        x=(a*(b*b-2)-b*(a*a-2))/((b*b-2)-(a*a-2));
-        if(fabs(x*x-2)<eps){
+        x=(cos(2/a)-2*sin(1/a)+1/a) * (cos(2/b)-2*sin(1/b)+1/b);
+        if(fabs(x-2*x+x)<eps){
             b=x;
         }else{
             a=x;
